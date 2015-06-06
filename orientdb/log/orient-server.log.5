@@ -1,0 +1,57 @@
+
+2015-06-03 22:26:00:033 INFO  OrientDB auto-config DISKCACHE=1,592MB (heap=455MB os=4,096MB disk=42,473MB) [orientechnologies]
+2015-06-03 22:26:00:039 INFO  Loading configuration from: /Users/ankush/Desktop/knowlarity/orientdb/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2015-06-03 22:26:00:407 INFO  OrientDB Server v2.0.10 (build UNKNOWN@r; 2015-05-25 16:48:43+0000) is starting up... [OServer]
+2015-06-03 22:26:00:448 INFO  Databases directory: /Users/ankush/Desktop/knowlarity/orientdb/databases [OServer]
+2015-06-03 22:26:00:521 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.28, socket=default) [OServerNetworkListener]
+2015-06-03 22:26:00:523 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2015-06-03 22:26:00:548 INFO  Installing dynamic plugin 'orientdb-lucene-2.0.10-dist.jar'... [OServerPluginManager]
+2015-06-03 22:26:00:734 INFO  Lucene index plugin installed and active. Lucene version: LUCENE_47 [OLuceneIndexPlugin]
+2015-06-03 22:26:00:735 INFO  Installing dynamic plugin 'studio-2.0.zip'... [OServerPluginManager]
+2015-06-03 22:26:00:766 INFO  Installing GREMLIN language v.2.6.0 - graph.pool.max=50 [OGraphServerHandler]
+2015-06-03 22:26:00:767 INFO  [OVariableParser.resolveVariables] Error on resolving property: distributed [orientechnologies]
+2015-06-03 22:26:00:770 INFO  Installing Script interpreter. WARN: authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+2015-06-03 22:26:01:995 INFO  OrientDB Server v2.0.10 is active. [OServer]Sent run-time exception to the client /127.0.0.1:52262: com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+	at com.orientechnologies.orient.server.OServer.serverLogin(OServer.java:437)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.connect(ONetworkProtocolBinary.java:693)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:275)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:52262: com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+	at com.orientechnologies.orient.server.OServer.serverLogin(OServer.java:437)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.connect(ONetworkProtocolBinary.java:693)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:275)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:52262: com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+	at com.orientechnologies.orient.server.OServer.serverLogin(OServer.java:437)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.connect(ONetworkProtocolBinary.java:693)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:275)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:52299: com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Wrong user/password to [connect] to the remote OrientDB Server instance. Get the user/password from the config/orientdb-server-config.xml file
+	at com.orientechnologies.orient.server.OServer.serverLogin(OServer.java:437)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.connect(ONetworkProtocolBinary.java:693)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:275)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+
+2015-06-03 22:34:01:213 INFO  Received shutdown command from the remote client /192.168.0.102:52303 [ONetworkProtocolBinary]
+2015-06-03 22:34:01:214 INFO  Remote client /192.168.0.102:52303 authenticated. Starting shutdown of server... [ONetworkProtocolBinary]
+2015-06-03 22:34:01:215 INFO  OrientDB Server is shutting down... [OServer]
+2015-06-03 22:34:01:216 INFO  Shutting down listeners: [OServer]
+2015-06-03 22:34:01:217 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2015-06-03 22:34:01:217 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2015-06-03 22:34:01:218 INFO  Shutting down protocols [OServer]
+2015-06-03 22:34:01:218 INFO  Shutting down plugins: [OServerPluginManager]
+2015-06-03 22:34:01:219 INFO  - studio [OServerPluginManager]
+2015-06-03 22:34:01:219 INFO  - script-interpreter [OServerPluginManager]
+2015-06-03 22:34:01:219 INFO  - graph [OServerPluginManager]
+2015-06-03 22:34:01:219 INFO  - lucene-index [OServerPluginManager]
+2015-06-03 22:34:01:221 INFO  Shutting down databases: [OServer]
+2015-06-03 22:34:01:228 INFO  OrientDB Engine shutdown complete [Orient]
+2015-06-03 22:34:01:228 INFO  OrientDB Server shutdown complete [OServer]

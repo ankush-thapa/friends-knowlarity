@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ super() }}
+    <ul>
+        <li><a href="{{url_for('create_random_graph')}}">Create random graph</a></li>
+        <li><a href="{{url_for('add_new_user')}}">Add new user</a></li>
+        <li><a href="{{url_for('create_friends')}}">Make Friends</a></li>
+        <li><a href="{{url_for('view_friendship')}}">View Friendship</a></li>
+        <li><a href="{{url_for('clear_db')}}">Clear DB</a></li>
+    </ul>
+{% endblock body %}

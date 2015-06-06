@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ super() }}
+<div><a href="{{url_for('show_all_apis')}}">&lt;&lt; back</a></div>
+</br></br></br>
+</br>
+</br>
+</br>
+</br>
+{% if message %}
+<div>{{message}}</div>
+</br>
+</br>
+{% endif %}
+<form action="{{url_for('create_friends')}}" method="POST">
+    <input name=_csrf_token type=hidden value="{{ session['_csrf_token'] }}">
+    <input type="email" name="user_1" placeholder="email id - user 1" {% if user_1%}value="{{user_1}}"{%endif%}></input>
+    <input type="email" name="user_2" placeholder="email id - user 2" {%if user_2%}value="{{user_2}}"{%endif%}></input>
+    <input type="submit" value="create connection"></input>
+</form>
+{% endblock body %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ super() }}
+<div><a href="{{url_for('show_all_apis')}}">&lt;&lt; back</a></div>
+</br>
+</br>
+</br>
+</br>
+<form action="{{url_for('add_new_user')}}" method="POST">
+    <input name=_csrf_token type=hidden value="{{ session['_csrf_token'] }}">
+    <input type="email" name="email_id" placeholder="email id"></input>
+    <input type="submit" value="create user"></input>
+</form>
+{% endblock body %}

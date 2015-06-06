@@ -1,0 +1,243 @@
+
+2015-06-03 22:34:06:243 INFO  OrientDB auto-config DISKCACHE=1,592MB (heap=455MB os=4,096MB disk=42,458MB) [orientechnologies]
+2015-06-03 22:34:06:249 INFO  Loading configuration from: /Users/ankush/Desktop/knowlarity/orientdb/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2015-06-03 22:34:06:483 INFO  OrientDB Server v2.0.10 (build UNKNOWN@r; 2015-05-25 16:48:43+0000) is starting up... [OServer]
+2015-06-03 22:34:06:533 INFO  Databases directory: /Users/ankush/Desktop/knowlarity/orientdb/databases [OServer]
+2015-06-03 22:34:06:603 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.28, socket=default) [OServerNetworkListener]
+2015-06-03 22:34:06:607 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2015-06-03 22:34:06:627 INFO  Installing dynamic plugin 'orientdb-lucene-2.0.10-dist.jar'... [OServerPluginManager]
+2015-06-03 22:34:06:811 INFO  Lucene index plugin installed and active. Lucene version: LUCENE_47 [OLuceneIndexPlugin]
+2015-06-03 22:34:06:812 INFO  Installing dynamic plugin 'studio-2.0.zip'... [OServerPluginManager]
+2015-06-03 22:34:06:847 INFO  Installing GREMLIN language v.2.6.0 - graph.pool.max=50 [OGraphServerHandler]
+2015-06-03 22:34:06:848 INFO  [OVariableParser.resolveVariables] Error on resolving property: distributed [orientechnologies]
+2015-06-03 22:34:06:850 INFO  Installing Script interpreter. WARN: authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+2015-06-03 22:34:06:851 INFO  OrientDB Server v2.0.10 is active. [OServer]
+2015-06-03 23:17:23:334 INFO  {db=friends_graph} Created database 'friends_graph' of type 'memory' [ONetworkProtocolBinary]Sent run-time exception to the client /127.0.0.1:53055: com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.checkServerAccess(ONetworkProtocolBinary.java:465)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.existsDatabase(ONetworkProtocolBinary.java:940)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:299)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:53066: com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.checkServerAccess(ONetworkProtocolBinary.java:465)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.existsDatabase(ONetworkProtocolBinary.java:940)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:299)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:53082: com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.checkServerAccess(ONetworkProtocolBinary.java:465)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.existsDatabase(ONetworkProtocolBinary.java:940)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:299)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:53091: com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+com.orientechnologies.orient.core.exception.OSecurityAccessException: Server user not authenticated.
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.checkServerAccess(ONetworkProtocolBinary.java:465)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.existsDatabase(ONetworkProtocolBinary.java:940)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:299)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+
+2015-06-04 00:04:28:858 INFO  {db=friends_db} Created database 'friends_db' of type 'memory' [ONetworkProtocolBinary]Sent run-time exception to the client /127.0.0.1:54453: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54475: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54484: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54489: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54556: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54568: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54587: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54601: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54611: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54623: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54637: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54645: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+Sent run-time exception to the client /127.0.0.1:54652: com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+com.orientechnologies.orient.core.exception.OSchemaException: Class Users already exists in current database
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.doCreateClass(OSchemaShared.java:906)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaShared.createClass(OSchemaShared.java:363)
+	at com.orientechnologies.orient.core.metadata.schema.OSchemaProxy.createClass(OSchemaProxy.java:111)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass.execute(OCommandExecutorSQLCreateClass.java:144)
+	at com.orientechnologies.orient.core.sql.OCommandExecutorSQLDelegate.execute(OCommandExecutorSQLDelegate.java:64)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.executeCommand(OAbstractPaginatedStorage.java:1194)
+	at com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage.command(OAbstractPaginatedStorage.java:1183)
+	at com.orientechnologies.orient.core.command.OCommandRequestTextAbstract.execute(OCommandRequestTextAbstract.java:63)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.command(ONetworkProtocolBinary.java:1179)
+	at com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary.executeRequest(ONetworkProtocolBinary.java:386)
+	at com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract.execute(OBinaryNetworkProtocolAbstract.java:217)
+	at com.orientechnologies.common.thread.OSoftThread.run(OSoftThread.java:69)
+
+2015-06-04 02:26:58:695 INFO  Received shutdown command from the remote client /192.168.0.102:54701 [ONetworkProtocolBinary]
+2015-06-04 02:26:58:696 INFO  Remote client /192.168.0.102:54701 authenticated. Starting shutdown of server... [ONetworkProtocolBinary]
+2015-06-04 02:26:58:699 INFO  OrientDB Server is shutting down... [OServer]
+2015-06-04 02:26:58:701 INFO  Shutting down listeners: [OServer]
+2015-06-04 02:26:58:704 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2015-06-04 02:26:58:705 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2015-06-04 02:26:58:705 INFO  Shutting down protocols [OServer]
+2015-06-04 02:26:58:706 INFO  Shutting down plugins: [OServerPluginManager]
+2015-06-04 02:26:58:706 INFO  - studio [OServerPluginManager]
+2015-06-04 02:26:58:706 INFO  - script-interpreter [OServerPluginManager]
+2015-06-04 02:26:58:707 INFO  - graph [OServerPluginManager]
+2015-06-04 02:26:58:707 INFO  - lucene-index [OServerPluginManager]
+2015-06-04 02:26:58:708 INFO  Shutting down databases: [OServer]
+2015-06-04 02:26:58:709 INFO  - closing storage: friends_graph... [Orient]
+2015-06-04 02:26:58:714 INFO  - closing storage: friends_db... [Orient]
+2015-06-04 02:26:58:728 INFO  OrientDB Engine shutdown complete [Orient]
+2015-06-04 02:26:58:729 INFO  OrientDB Server shutdown complete [OServer]

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ super() }}
+<div><a href="{{url_for('show_all_apis')}}">&lt;&lt; back</a></div>
+</br></br></br>
+<div>{{message}}</div>
+{% endblock body %}
